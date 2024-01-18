@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahapatra Travels</title>
+    <style>
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #073568cc;
+            color: #fff;
+            padding: 20px;
+        }
+        /* footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333333;
+            color: #fff;
+            padding: 20px;
+        } */
+ 
+        .foot {
+            width: 27%;
+        }
+ 
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+ 
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+ 
+        li {
+            margin-bottom: 5px;
+        }
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .right {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+        }
+        .top{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+        }
+
+  
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("images/img3.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: rgb(139, 130, 130);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #edebeb;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        
+    </style>
+    <!-- Include Font Awesome (you can also use your preferred icon library) -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-rns8/HJgO62RPoZlq+wS7kE++qpaS1iRMFbujQ6A14c29r5hpUnVFbF06Ndo6QVq" crossorigin="anonymous"> -->
+</head>
+<body>
+    <!-- Header Part -->
+    <header>
+        <div class="topnav">
+            <!-- Icon section on the left -->
+            <div class="icon">
+                <span style="color: #f2f2f2; font-size: large; font-size: 24px; margin-right: 10px;">
+                    Mahapatra Travels</span> <!-- Example Font Awesome ticket icon -->
+                <br>
+                <span style="color: aquamarine;">Discover Your Dream Place</span>
+            </div>
+            
+            <nav>
+                <!-- Links on the right -->
+                <a class="active" href="#tickets">Tickets</a>
+                <a href="#hotel">Hotel</a>
+                <a href="#package">Package</a>
+                <a href="#explore">Explore</a>
+                <a href="#login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mid Part -->
+    <div>
+
+        <div style="background-color: yellow; text-align: center; ">
+            <span style="color: #1b0c0c;">Register Today | 24-Hour Flash Sale! 40% off Upto 500 Ruppes on your first Booking.</span>
+        </div>
+
+        <div class="bg-img">
+    
+            <form action="" class="container">
+              <h1 >Login</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <label><u style="text-align: center;">New user?<u></label>
+              
+              <button type="submit" class="btn">Login</button>
+            </form>
+          </div>
+          
+        <div>
+            <div>
+                <p>Our Listed Places</p>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="#">
+                    <img src="images/img.jpg" alt="Lakshadweep image" width="600" height="400">
+                  </a>
+                  <div class="desc"><h4>Lakshadweep, Union territory of India</h4><br> Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports.</div>
+                </div>
+              </div>
+              
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="#">
+                    <img src="images/img2.jpg" alt="Taj Mahal - 7th Wonder" width="600" height="400">
+                  </a>
+                  <div class="desc"><h4>Taj Mahal, Agra, Uttar Pradesh </h4><br> The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. Taj Mahal is listed as one of the modern seven wonders of the world.</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="#">
+                    <img src="images/img1.jpg" alt="Munnar hills" width="600" height="400">
+                  </a>
+                  <div class="desc"><h4>Munnar
+                    Town in Kerala
+                    </h4><br>it's surrounded by rolling hills dotted with tea plantations. Eravikulam National Park, is home to the Lakkam Waterfalls, hiking trails and 2,695m-tall Anamudi Peak.</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="#">
+                    <img src="images/img4.jpg" alt="Jaipur Hawa Mahal" width="600" height="400">
+                  </a>
+                  <div class="desc"> <h4>Hawa Mahal, Jaipur</h4><br>
+                    This five-storey building has been built without a foundation and is known for its exceptional ventilation, which is also the reason behind its name, Hawa Mahal.</div>
+                </div>
+              </div>
+              
+              <div class="clearfix"></div>
+        </div>
+
+    </div>
+
+    <!-- Footer Part -->
+    <div>
+        <div class="footer-container">  
+            <div class="foot">
+                <p>About MTravels</p>
+                <ul>
+                    <li>MTravels was founded by Mahapatra Family with years of experience in the online 
+                        tourism field. We love to travel and to share our insights with other 
+                        vacation goers. After years of using tourism websites, we noticed that 
+                        often times it's possible to save a lot of money with the help of efficient 
+                        and thorough price comparisons.
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="foot">
+                <p>Company</p>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="foot">
+                <p>Follow us</p>
+                <ul>Facebook</ul>
+                <ul>Instagram</ul>
+                <ul>Twitter</ul>
+            </div>
+        </div> 
+
+        <hr >
+
+        <div class="footer-container">© 2024 MTravels (India) Private Limited. All rights reserved</div>
+        <!-- <footer>© 2024 MTravels (India) Private Limited. All rights reserved</footer> -->
+    </div>
+</body>
+</html>
